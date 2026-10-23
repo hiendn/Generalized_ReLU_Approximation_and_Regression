@@ -1,0 +1,10 @@
+{
+  "seed": 20261021,
+  "n_min": 100,
+  "n_max": 100000,
+  "n_grid": 100,
+  "repetitions": 20,
+  "test_size": 10000,
+  "noise_scale": 0.25,
+  "estimator": "finite PWA normaliser and capped-block pairwise median-of-means selection"
+}

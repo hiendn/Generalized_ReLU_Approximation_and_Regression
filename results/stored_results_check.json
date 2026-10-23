@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "replications_checked": 2000,
+  "summary_rows_recomputed": 100,
+  "sample_size_range": [
+    100,
+    100000
+  ],
+  "maximum_recorded_normaliser_error_over_tolerance": 0.33332173475560256,
+  "last_summary": {
+    "n": 100000,
+    "m": 50000,
+    "requested_blocks": 327,
+    "blocks": 327,
+    "block_size": 152,
+    "block_cap_active": 0,
+    "net_mean": 1.2290788133500883e-05,
+    "net_se": 1.3480771728716236e-06,
+    "net_median_scale": 8.0,
+    "thr_mean": 8.553877446783773e-05,
+    "thr_se": 7.182252761157628e-06,
+    "thr_median_scale": 4.0,
+    "ul_mean": 8.553877446783773e-05,
+    "ul_se": 7.182252761157628e-06,
+    "ul_median_scale": 4.0,
+    "max_normaliser_error": 0.001490521856004623,
+    "epsilon": 0.00447213595499958
+  },
+  "full_simulation_rerun": false
+}
