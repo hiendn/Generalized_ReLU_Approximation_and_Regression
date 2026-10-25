@@ -52,7 +52,8 @@ Recreate the figure from the stored summaries:
 
 The figure appears in `results/`. Its dotted reference line is
 `0.001 * (n/1000)^(-2/3)`. The line's vertical placement is illustrative.
-Error bars show one Monte Carlo standard error across the 20 replications.
+Error bars extend 1.96 Monte Carlo standard errors on each side of the mean
+across the 20 replications, computed on the original risk scale.
 
 Rerun the complete experiment in a separate directory:
 
@@ -98,7 +99,7 @@ At `n = 100000`, the supplied mean risks and Monte Carlo standard errors are:
 | --- | ---: | ---: |
 | Normalised ReLU estimator | 1.23e-05 | 1.35e-06 |
 | Density-threshold oracle | 8.55e-05 | 7.18e-06 |
-| Unlocalised oracle | 8.55e-05 | 7.18e-06 |
+| Unthresholded density oracle | 8.55e-05 | 7.18e-06 |
 
 ## Contact
 

@@ -406,11 +406,11 @@ def plot(output_dir: Path, figure_dir: Path) -> None:
     fig,ax=plt.subplots(figsize=(7.2,4.4))
     labels={'net':'Adaptive normalised ReLU network',
             'thr':'Adaptive density-threshold oracle',
-            'ul':'Adaptive unlocalised oracle'}
+            'ul':'Adaptive unthresholded density oracle'}
     for key,style in zip(('net','thr','ul'),('-','--','-.')):
         mean=np.array([float(r[key+'_mean']) for r in rows])
         se=np.array([float(r[key+'_se']) for r in rows])
-        ax.errorbar(ns,mean,yerr=se,label=labels[key],linestyle=style,
+        ax.errorbar(ns,mean,yerr=1.96*se,label=labels[key],linestyle=style,
                     linewidth=1.4,elinewidth=.6,capsize=0)
     ref=.001*(ns/1000.)**(-2/3)
     ax.plot(ns,ref,':',linewidth=1.3,label=r'Reference $0.001(n/1000)^{-2/3}$')
